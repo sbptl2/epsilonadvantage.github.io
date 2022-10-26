@@ -1,0 +1,82 @@
+---
+layout: post
+---
+
+Throughout my life, I've probably spent what probably amounts to years of my life watching folks on the internet build fun contraptions, set up various experiments, and provide interesting research on various topics. Some of these things are impressive feats of skill -- crazy robots, record breaking contraptions, and thoroughly investigated research. But trying my hand at simpler stuff recently, I've come to realize that I never appreciated just how difficult it is to create content and interesting research worth sharing. Maybe more precisely, I'm just really really bad at it...
+
+I've had writing blog posts on my todo list for several months. But for whatever reason, it's quite hard to actually put something out there. Part of this is certainly an aspect of perfectionism -- I think that writing a blog post that actually contributes a lot of value to others inherently requires that you either put a lot of time into that individual post or investing a lot of time into acquiring a unique skill set that lets you make useful insights. Unfortunately, I'm looking towards blogging as a small side hobby that I don't invest all that much time into and the only skillset I have appears to be falling into bad rabbit holes, underthinking project ideas, and complaining.
+
+... but who says that I can't use those to write a blog post. So let's take a stroll down memory lane and embellish in my failures.
+
+## A Very Expensive Box Fan
+My first project idea came before my aspiring blogger days, when I moved to NYC. For the most part it was great, even though it was the pre-vaccine covid days. But there were some not so great aspects too, like the 1900s radiator responsible for heating up my apartment.
+ ![](/assets/radiator.png)
+
+Turns out these things only have two settings, on and off. So they always give it 100%, and as someone who regularly can only muster about 70% effort I couldn't stand being regularly shown up. Some days it was $$50 ^\circ F$$ outside and the radiator chugged along like it was $$20 ^\circ F$$ leaving me to stew and endure mild warmth the entire day.$$^1$$
+
+Now if you're anything like my roommate you would suggest getting up and turning off the radiator when it gets too hot. Now, turning the radiator on and off several times a day is already pushing my abilities. But it wouldn't be enough: I wouldn't know to turn it off until it was too hot and I'd have to cook sous vide until the room cooled back down. OpEn ThE WiNdOwS you say. But it's just more of the same, it would get too cold, I'd have to close them, and then I'd have to wait for the radiator to heat the room back up. If I did nothing, it was clear that this would end in one of two ways.
+
+![](/assets/tragedy.png)
+
+But we now live in the future; we have technology and if I used it just right maybe just maybe I could manage to save myself. So I began to chart a course to a better tomorrow.
+
+![](/assets/dream_savior.png)
+
+It was simple; a few computer fans taped to a box and connected up to a raspberry pi and a temperature sensor. The dream was to put it above the radiator and then have it send the excess heat out through the window when it was too hot. This would be easy and save me from the countless hours of manual labor turning the radiator knob and the accompanying human suffering.
+
+But, I had forgotten that the real world kinda sucks, especially when you decide not to think things through, are impatient, and are lazy. Turns out Raspberry Pi's are easier to program with a monitor, but I didn't have one of those. Thankfully with several annoyances you can set it up and program it over your wifi network. Wire coatings are apparently also hard to peel off. After hundreds of needle like stabs, I can certify that wire peelers are in fact a useful invention well worth $10. Apparently I was also supposed to measure out all the wire lengths before gluing the fans down... so I had to extend the fan wires. Also, turns out that if you're putting a temperature sensor right above a radiator then the numbers lose all meaning, but ya know we'll just fix that in the software.
+
+Anyways, hundreds of dollars and probably 30 hours later, I was left with a box fan that was only a little bit of a fire hazard. I plugged it in and viola my room was sometimes a better temperature. Buuuut this probably just worked because the computer fans were mostly just massive holes to let cold air in...
+
+![](/assets/real_savior.png)
+
+Sometime it got too cold and I had to cover the holes, but this was less work than opening and closing windows so I'll take that as a win.
+
+## Strava Salt
+Fast forward about a year and I began to set my sights on starting up a blog. But we all know that didn't happen. After not blogging for a few months, I ended up getting into running instead. I quickly installed Strava to keep track of my runs and see how several friend were doing. I logged in and saw that there was a 5k badge for May. So I went out and ran around the loop in a small park near my house *seven* times. I want to iterate that this sucked, because running is pain and running in circles is even worse. At the end though, I was content with knowing that I had done what I set out to do. But unfortunately, things ended a bit like this:
+
+![](/assets/strava_betrayal.png)
+
+IT WAS OFF BY BARELY 1%. There is no way that GPS is that accurate. Powered by spite, I was determined to use my blog as a vehicle to complain and run the same path a few more times this week to see if the app was actually accurate to 1%. I imagined running the same loop three to five more times just to prove that the variance of the GPS was more than a couple percent and that Strava was a lie. The suffering was worth the righteousness.
+
+But then I realized this was probably pretty dumb... I think the true distance I was running probably also had variation on the order of percent. So what? Was I going to let Strava off the hook? No way in hell. While I was using my brain though, I realized that I definitely swayed side to side an inch or two every stride and Strava wasn't counting this. And with that I had won, my spite levels dropped, and I was once again left with no blog post.
+
+## Biased Coins
+Finally, this brings me to the coup de grace: a post on biased coins. After rolling a few too many 10s in a game of Catan, I wondered if I'd notice if I were playing with a rigged set of dice. I remembered that as a kid I had seen some people suggest rigging dice by putting them in the oven to shift the weight. I'm still not exactly sure how that works because some how the inside melts but the outside doesn't? Regardless, my plan was to learn how to 3D print some weighted dice and rig them. Honestly, still could make a potentially interesting blog post. But I bet a friend 5 Singaporian dollars that I'd get something out in a week and learning how to 3D print didn't seem worth the risk of having to find Singaporian dollars. So I settled on the next best thing: a rigged coin.
+
+I figured it would be easy; I'd just connect a dollar coin to a quarter and call it a day.$$^2$$ But this took slightly more effort than anticipated and several designs.
+
+![](/assets/rigged_coin_designs.png)
+
+Now this didn't take me too long to try all these out thankfully. But turns out that melting a bunch of stuff in your room makes it uninhabitable... So I opened the windows and didn't come back for several hours.
+
+![](/assets/toxic_fumes.png)
+
+Anyways, once my room was safe again, I came back to flip my coin and flip I did. I flipped it a few hundred times and caught it in my hand and it seemed fair. I expected that though, the bad effects really happen when it bounces on a hard surface I thought. But then after talking to some friends about how biased we thought it might be, I began to think about how this ought to work and got worried since the coin had to land near its edge for the weighting to have an effect. Thinking about it more, it seemed to have to land really close to the edge to actually be biased...
+
+The logic was roughly that a weighted coin is biased as if it lands on its edge, the heavy side will fall face down. A fair coin of course would be equally likely to go either way. So there are a few more angles leading a weighted coin landing heavy side down than up.
+
+![](/assets/biased_coin_model.png)
+
+What's $$\epsilon$$ here? Well if weighted a dollar coin to have all it's weight on one face, it would be roughly $$4^\circ$$... which is a 2% bias or so. By this model, I probably would have had to flip my coin perhaps 10000 times before I could determine if it was biased.$$^3$$ But that uhhh wouldn't really work for me... Talking about this with a friend they suggested that coins sometimes spin when they land on hard surfaces.
+
+After spending a whole day on this, I hoped and prayed that this was true and made my first flip, leaving things to chance. When I did, I was greeted by an insanely loud thud. Turns out dropping the equivalent of three quarters onto a wood floor is very loud. In an attempt to not be a horrible neighbor at 11pm, I only flipped the coin a few more times before giving up. (Apparently, dropping it on a table isn't much better :'(). Being the perfect denizen I am, I headed to a park outside, put my noise cancelling headphones in, and started flipping my coin.
+
+![](/assets/disturbance.png)
+
+After 100 flips, from about two feet high the coin was looking fair.$$^4$$ And I thought to myself  "welp this sucks... Maybe if I drop the coin from higher it will bounce around more and I'll see more bias." So I started flipping it 8 feet in the air. After about 15 of those, the solder broke and the coins split -- turns out solder isn't all that structurally sound...$$^5$$ Coincidentally, my blogging sprit broke at the same time.
+
+## What's Next?
+Putting the pieces of myself back together, I realized that technical blogging is hard. In general, it just seems quite difficult to produce things of value to others. There are of course steps to take to improve my abilities here, like thinking things through a bit more, but I'm pretty far from being a good technical blogger. That said, regardless of what happened with this blog, I always intended to continue going down these rabbit holes, asking questions, and exploring. All this time though, I think I've overlooked an important aspect of blogs: story telling. Most of my ideas and projects lead to failures or insights that aren't interesting enough to stand alone on a technical basis. But at least some of them lead to fun stories and adventures and it seems nice to be able to share those with others.$$^6$$
+
+$$^1$$ I don't actually think this is true, because then I think it would be absurdly hot in my apartment. But point the temperature adjustment wasn't great.
+
+$$^2$$ For those curious, a dollar coin is about 43% heavier than a quarter.
+
+$$^3$$ I was too lazy to do the computation here for the coins, so I'm just guesstimating here.
+
+$$^4$$ Interestingly enough I later saw that it was highly biased when I spun it on it's side, but apparently it's not that uncommon to find a pretty biased quarter with this same property according to [Persi Diaconis](https://www.youtube.com/watch?v=Obg7JPd6cmw)
+
+$$^5$$ For the record I actually did a bad job soldering these together since my soldering iron couldn't really heat up the coins to the ideal temperature. (It was hot enough to lightly burn my fingers several times though for whatever that's worth)
+
+$$^6$$ I feel like this was the wholesome way to end my streak of complaining, but the odds I never write another blog post again are pretty high :P
